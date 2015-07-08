@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* Table of Content
+==================================================
+#Site Styles
+#Page Styles
+#Media Queries
+#Font-Face */
+
+/* #Site Styles
+================================================== */
+a {	
+	text-decoration: none; 
+	-webkit-transition: background 0.2s ease-in;
+	-moz-transition: background 0.2s ease-in;
+	-o-transition: background 0.2s ease-in;
+	-ms-transition: background 0.2s ease-in;
+	transition: background 0.2s ease-in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'bebas_neueregular';
+}
+
+h1:not(.logo) {
+	color: #FFFFFF;
+	font-size: 90px;
+	line-height: 100px;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-size: 62px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 32px;
+	line-height: 32px;
+	text-transform: uppercase;
+	margin-bottom: 44px;
+}
+
+h4 {
+	color: #FFFFFF;
+	font-size: 31px;
+	line-height: 34px;
+	text-align: center;
+}
+
+h5 {
+	color: #FFFFFF;
+	font-size: 15px;
+	line-height: 23px;
+	text-align: left;
+}
+
+h6{
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+p {
+	color: #333333;
+	line-height: 23px;
+}
+
+.size18 {
+	font-size: 18px;
+	line-height: 29px;
+}
+
+.size22 {
+	font-size: 22px;
+	line-height: 31px;
+	margin-bottom: 23px;
+}
+
+.size24 {
+	font-size: 24px;
+	line-height: 38px;
+	text-align: center;
+}
+
+a.linkblue {
+	color: #1AB0FE;
+	text-decoration: underline;
+}
+
+a.linkblue:hover, section.blog .one-third p a:hover {
+	background-color: rgba(203, 237, 255, 0.45);
+}
+
+.bold { font-weight: 700; }
+.fontaver{ font-family: 'averregular'; }
+.par60{ padding-right: 60px; }
+.mb0{ margin-bottom: 0px !important; }
+.mr20{ margin-right: 20px !important; }
+.pb0{ padding-bottom: 0px !important; }
+.pmb34 p{ margin-bottom: 22px; }
+.pmb34 p:last-child{ margin-bottom: 0px; }
+.textcenter, .textcenter *{ text-align: center; }
+.nodisplay{ display: none !important; }
+.pright{ float: right; }
+span.tm{ display: inline-block; }
+
+.line{
+	border-bottom: 1px solid #EDEDED;
+	clear: both;
+	display: block;
+	margin: 73px 0px;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+.columnscenter {
+	display: block;
+	float: none;
+	margin: 0 auto !important;
+}
+
+/* #Page Styles
+================================================== */
+
+#header {
+	background: url(../img/darkdenim3.png) ;
+	background-repeat: repeat ;
+	background-position: center ;
+	top: 0px;
+	height: 100px;
+	left: 0px;
+	right: 0px;
+	
+}
+
+#header a {
+	height: 100px;
+	width: 320px;
+	background: url(../images/icn/logo_flight.png) ;
+	background-repeat: no-repeat ;
+	background-position: left ;
+	float: left;
+	text-indent: -999px;
+}
+
+#header h1 {
+	text-align: right;
+	font-size: 60px;
+	padding-right: 40px;
+	float: right;
+}
+
+#orbit {
+	background: #639;
+	left: 0px;
+	right: 0px;
+	top: 100px;
+	bottom: 0px;
+	width: 100%;
+	margin: 0px 0px;
+}
+
+#info {
+	
+	height: 206px;
+	width: 1000px;
+	bottom: 70px;
+	color: #FFF;
+	left: 50%;
+	margin: 0 0 0 -500px;
+}
+
+#info_picture {
+	background: url('../img/nami.png');
+	height: 200px;
+	width: 200px;
+	float:left;
+	text-align: right;
+	bottom: 0px;
+	top: 0px;
+	border: rgba(25,25,25,1) 3px dashed;
+}
+
+#info_picture img {
+	width: 200px;
+	height: 200px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#info_date {
+	background: url('../img/nami.png');
+	text-align: center;
+	top: 0px;
+	height: 40px;
+	right: 0px;
+	left: 210px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: rgba(25,25,25,1) 3px dashed;
+}
+
+#info_description {
+	background: url('../img/nami.png');
+	height: 130px;
+	top: 70px;
+	bottom: 0px;
+	left: 210px;
+	right: 0px;
+	float: left;
+	border: rgba(25,25,25,1) 3px dashed;
+}
+
+#info_description h5 {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.layer {
+	position : absolute;
+}
+
+#moonMap {
+	display: none;
+	background-color: #ff000;
+	left: 50%;
+	margin: 0 0 0 -300px;
+	top: 150px;
+	width: 600px;
+	height: 640px;
+	border: rgba(50,50,50,0.4) 2px solid;
+	z-index:20;
+	box-shadow: 0px 0px 50px rgba(255,153,0,0.5);
+}
+
+#moonDetail {
+	display: block;
+	background-color: #ff000;
+	left: 50%;
+	margin: 0 0 0 -290px;
+	top: 150px;
+	width: 580px;
+	height: 600px;
+	border: rgba(50,50,50,0.4) 2px solid;
+	z-index:20;
+	box-shadow: 0px 0px 50px rgba(255,153,0,0.5);
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<title>Fly Me to the Moon – Lunar Travel Agency</title>
+	<meta name="description" content="A Lunar Travel Agency.">
+	<meta name="author" content="Fly Me to the Moon">
+	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Styling
+	================================================== -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/fonts.css">
+	
+	<!-- Favicons
+	================================================== -->
+	
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    
+	<link href="css/datepicker.css" rel="stylesheet" type="text/css"/>	
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#datepicker').datepicker({
+				inline: true,
+				//nextText: '&rarr;',
+				//prevText: '&larr;',
+				showOtherMonths: true,
+				//dateFormat: 'dd MM yy',
+				dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+				//showOn: "button",
+				//buttonImage: "img/calendar-blue.png",
+				//buttonImageOnly: true,
+			});
+		});
+	</script>
+   
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-5').removeClass('active');
+				});
+
+			});
+
+		</script>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="sixteen columns">
+			<a href="#" class="gotomenu button orange nodisplay"><span class="spritesheet icnplus"></span></a>
+		</div>
+	</div>
+	
+	<section class="banner home">
+		<div>
+			<div class="container">
+            	<div class="logo_banner"></div>
+				<div class="sixteen columns">
+					<hgroup>
+						<h1>Fly Me to the Moon</h1>
+						<h4>Choose your lunar destination <span class="fontaver">&</span> Lift Off!</h4>
+						<p class="learn"><a href="#" class="button medium orange">Book a Flight<span class="spritesheet arrowbottom"></span></a></p>
+					</hgroup>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<section id="about" class="move bgwhite aboutus">
+		<div class="container">
+			<section class="eight columns mediapb">
+				<div class="par60 pmb34">
+					<h3>Book A FLight</h3>
+					<p class="size22">Please choose your destination:</p>
+                    <p align="left">
+                    	<div id="dd" class="wrapper-dropdown-5" tabindex="1" align="left">
+                    		<span id="dropValue">Sea of Tranquility</span>
+						<ul class="dropdown">
+							<li><a style="cursor: hand" index="0"><i class=""></i>Sea of Tranquility</a></li>
+							<li><a style="cursor: hand" index="1"><i class=""></i>Ocean of Storms</a></li>
+							<li><a style="cursor: hand" index="2"><i class=""></i>Fra Mauro</a></li>
+						</ul>
+					</div></p>
+					<p>Depending on your destination, travel cost may change.</p>
+                    <p class="size22">Departure date:</p>
+                    <p><input type="date" id="seletDate"></input></p>
+					
+					<p>Due to lunar phasing constraints, some dates might not be available.</p>
+                    <p class="learn"><a id="goLink" href="flight.html" class="button medium orange">Go!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spritesheet arrowbottom"></span></a></p>
+				</div>
+			</section>
+			<section class="eight columns">
+				<ul class="features">
+					<li class="development">
+						<span class="icn"><span class="spritesheet2 icn1"></span></span>
+						<h6>Lift off!</h6>
+						<p>D-Day. Let's fly to the Moon!</p>
+					</li>
+					<li class="branding">
+						<span class="icn"><span class="spritesheet2 icn2"></span></span>
+						<h6>Travel</h6>
+						<p>It may last a few days, please be patient...</p>
+					</li>
+					<li class="experience">
+						<span class="icn"><span class="spritesheet2 icn3"></span></span>
+						<h6>Land on the Moon</h6>
+						<p>Fasten your seat belt.</p>
+					</li>
+                     <li class="experience">
+						<span class="icn"><span class="spritesheet2 icn4"></span></span>
+						<h6>Your first step on the surface</h6>
+						<p>And probably not your last.</p>
+					</li>
+                    <li class="experience">
+						<span class="icn"><span class="spritesheet2 icn5"></span></span>
+						<h6>Enjoy!</h6>
+						<p>And enjoy again.</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="sixteen columns textcenter">
+				<ul class="social-media">
+					<li><a href="http://twitter.com/LunarTravelAgcy" alt="Twitter"><span class="spritesheet icntw"></span></a></li>
+					<li><a href="https://www.facebook.com/lunartravelagency" alt="Facebook"><span class="spritesheet icnfb"></span></a></li>
+				</ul>
+				<p class="size18">We're a team of engineering students, designers, and space enthusiasts.<br/>
+                We are currently participating in the Space Apps Challenge 2013.</p>
+				<ul class="contactus">
+					<li><a href="mailto:contact@lunartravelagency.com" class="mail">lunartravelagency@gmail.com</a></li>
+				</ul>
+				<p>The Lunar Travel Agency team.</p>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- container -->
+	
+	<!-- JS
+	================================================== -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" charset="utf-8"></script>
+	<script	src="javascripts/prefixfree.min.js" type="text/javascript"></script>
+	<script	src="javascripts/ideaware.js" type="text/javascript"></script>
+	<script	src="javascripts/jquery.spasticNav.js" type="text/javascript"></script>
+	<script	src="javascripts/jquery.slideto.min.js" type="text/javascript"></script>
+	<script	src="javascripts/retina.js" type="text/javascript"></script>
+	<script src="javascripts/google_analytics.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.timeago.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.browserLanguage.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.cookies.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		
+		jQuery(document).ready(function($) {
+			OnLoad();
+		});
+
+		function OnLoad() {
+			$.getJSON('http://api.tumblr.com/v2/blog/blog.ideaware.co/posts?api_key=ISx1Zxugo4S0CZBWwcFX4iFeY1kdnXV8KgVgifA4BuO8aJTTm6&callback=?', function(data) {
+				var container = $(".blog .container");
+				var posts = data.response.posts.slice(0,3);
+				for (var i = 0; i < posts.length; i++) {
+					container.append(addArticle(posts[i]));
+				}
+			});
+		}
+		
+		function addArticle(entry) {
+			var title = null;
+			var image = null;
+			var body = null;
+			var timestamp = null;
+			var article = $('<article class="one-third column"></article>');
+
+			if (entry.type == "text") {
+				title = $('<h6><a href="'+entry.post_url+'">'+entry.title+'</a></h6>');
+				body = summarize(entry.body, entry.post_url);
+			} else if (entry.type == "photo") {
+				title = $('<h6><a href="'+entry.post_url+'">'+strip_html(entry.caption)+'</a></h6>');
+				image = $('<a href="'+entry.post_url+'" class="image"><img class="scale-with-grid" src="'+entry.photos[0].alt_sizes[1].url+'" alt="" /></a>');
+			} else if (entry.type == "quote") {
+				title = $('<h6><a href="'+entry.post_url+'">'+entry.text+'</a></h6>');
+				body = summarize(entry.source, entry.post_url);
+			} else if (entry.type == "link") {
+				title = $('<h6><a href="'+entry.url+'">'+entry.title+'</a></h6>');
+				body = entry.description;
+			} else if (entry.type == "video") {
+				title = $('<h6><a href="'+entry.post_url+'">'+strip_html(entry.caption)+'</a></h6>');
+			}
+			timestamp = jQuery.timeago(parseDate(entry.date));
+
+			var div = $('<div></div>');
+			div.append(title);
+			if(body) div.append(body);
+			if(image) div.append(image);
+			div.append(timestamp);
+			article.append(div);
+
+			return article;
+		}
+
+		function strip_html(html) {
+			var div = document.createElement("div");
+			div.innerHTML = html;
+			return div.textContent || div.innerText || "";
+		}
+
+		function summarize(html, read_more) {
+			var tags = $.grep($.makeArray($(html)), function(x) { return $(x).html(); }).slice(0,2);
+			tags = $.grep($.makeArray($(html)), function(x) { return $(x).html(); }).slice(0,2);
+			$(tags).last().append('... <a href="'+read_more+'">Read More</a>');
+			return $("<div>").append(tags).html();
+		}
+		
+		function parseDate(date_string) {
+			var di = /^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}) GMT$/.exec(date_string); // "2012-09-14 22:20:51 GMT"
+			var local_date = new Date();
+			var date = new Date(parseFloat(di[1]), parseFloat(di[2])-1, parseFloat(di[3]), parseFloat(di[4]) - local_date.getTimezoneOffset()/60, parseFloat(di[5]), parseFloat(di[6]));
+			return date;
+		}
+		
+	</script>
+	
+	<script type="text/javascript">
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6001.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+		
+
+	
+	<!-- End Document
+	================================================== -->
+	</body>
+</html>
+<!-- Localized -->
